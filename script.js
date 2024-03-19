@@ -42,7 +42,7 @@ btn.addEventListener("click", async () => {
         clearInterval(interval); 
     } catch (error) {
         console.error("Error in button click event listener:", error);
-        fillingBox.innerHTML = "I am sorry as a LLM model i am unable to answer this question.";
+        fillingBox.innerHTML = "I am sorry as a LLM model i am unable to answer this question.And recheck your api key.";
     } finally {
         progressBar.style.display = "none";
     }
