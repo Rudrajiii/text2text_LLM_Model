@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    background: #D7FFA7;
+}
+.main{
+    width: 850px;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 2vh;
+}
+h1{
+  font-family: "Holtwood One SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  /* white-space: nowrap; */
+}
+label{
+    font-family: "Holtwood One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    /* white-space: nowrap; */
+}
+#ip{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .6rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#btn{
+    padding: 1rem 2.5rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: #fff;
+    font-size: 1.1rem;
+    font-family: "Holtwood One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+#btn:hover{
+    background: #c0e9d89e;
+    transition: all 0.5s ease;
+}
+#outPut{
+    border-radius: .6rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background: transparent;
+    font-size: 1.3rem;
+    line-height: 1.1em;
+    word-spacing: .4em;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.responsive{
+    /* border: 2px solid; */
+    position: relative;
+}
+@media (width <= 874px){
+    .main{
+        width: 700px;
+    }
+    #outPut{
+        width: 450px;
+        margin-right: 2rem;
+    }
+} 
+@media (width <= 730px){
+    .main{
+        width: 500px;
+
+    }
+    h1{
+        width: 70%;
+        white-space: nowrap;
+        margin-right: 5rem;
+        font-size: 2rem;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    #outPut{
+        height: auto;
+    }
+} 
+@media (width <= 523px){
+    .main{
+        width: 350px;
+
+    }
+    #outPut{
+        width: 370px;
+        margin-right: .9rem;
+    }
+    h1{
+        width: 70%;
+        white-space: nowrap;
+        margin-right: 4.5rem;
+        font-size: 1.5rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    #outPut{
+        height: auto;
+    }
+} 
+    
