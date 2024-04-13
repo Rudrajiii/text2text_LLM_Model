@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #d3d4d677;
+}
+@font-face {
+    font-family: hello;
+    src: url('./CavasNeraFree.ttf');
 }
 html,body{
     width: 100vw;
@@ -10,7 +15,7 @@ html,body{
     display: grid;
     overflow: hidden;
     place-items: center;
-    background: #D7FFA7;
+    background: #1e1e1e;
 }
 .main{
     width: 850px;
@@ -23,14 +28,14 @@ html,body{
     gap: 2vh;
 }
 h1{
-  font-family: "Holtwood One SC", serif;
+  font-family: "hello", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
   /* white-space: nowrap; */
 }
 label{
-    font-family: "Holtwood One SC", serif;
+    font-family: "hello", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
@@ -39,25 +44,27 @@ label{
 #ip{
     width: 100%;
     padding: 1rem;
-    border-radius: .6rem;
+    border-radius: 2.3rem;
     border: none;
     outline: none;
+    color: #1e1e1e;
     font-size: 1.5rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 #btn{
-    padding: 1rem 2.5rem;
-    border-radius: 0.6rem;
+    padding: 1.1rem 2rem;
+    border-radius: 2rem;
     border: none;
     background: #fff;
+    color: #1e1e1e;
     font-size: 1.1rem;
-    font-family: "Holtwood One SC", serif;
+    font-family: "hello", serif;
     font-weight: 400;
     font-style: normal;
     cursor: pointer;
 }
 #btn:hover{
-    background: #c0e9d89e;
+    background: #afb0b09e;
     transition: all 0.5s ease;
 }
 #outPut{
@@ -92,10 +99,17 @@ label{
         width: 500px;
 
     }
+    #ip{
+        padding: .7rem;
+        font-size: 1rem;
+    }
+    #btn{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
     h1{
         width: 70%;
         white-space: nowrap;
-        margin-right: 5rem;
         font-size: 2rem;
     }
     label{
@@ -110,6 +124,12 @@ label{
         width: 350px;
 
     }
+    #ip{
+        padding: .5rem;
+    }
+    #btn{
+        padding: .7rem .7rem;
+    }
     #outPut{
         width: 370px;
         margin-right: .9rem;
@@ -117,7 +137,7 @@ label{
     h1{
         width: 70%;
         white-space: nowrap;
-        margin-right: 4.5rem;
+        margin-right: 1.5rem;
         font-size: 1.5rem;
     }
     label{
@@ -128,3 +148,57 @@ label{
     }
 } 
     
+.center {
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+    .wave {
+    width: 5px;
+    height: 80px;
+    background: linear-gradient(45deg, rgb(73, 16, 187), #d3d4d677);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+    }
+    .wave:nth-child(2) {
+    animation-delay: 0.1s;
+    }
+    .wave:nth-child(3) {
+    animation-delay: 0.2s;
+    }
+    .wave:nth-child(4) {
+    animation-delay: 0.3s;
+    }
+    .wave:nth-child(5) {
+    animation-delay: 0.4s;
+    }
+    .wave:nth-child(6) {
+    animation-delay: 0.5s;
+    }
+    .wave:nth-child(7) {
+    animation-delay: 0.6s;
+    }
+    .wave:nth-child(8) {
+    animation-delay: 0.7s;
+    }
+    .wave:nth-child(9) {
+    animation-delay: 0.8s;
+    }
+    .wave:nth-child(10) {
+    animation-delay: 0.9s;
+    }
+
+    @keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+    }
