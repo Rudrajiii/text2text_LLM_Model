@@ -8,68 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,100..900;1,100..900&family=Holtwood+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap" rel="stylesheet">
-    <style>
-        .center {
-            height: 14vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: transparent;
-}
-            .wave {
-            width: 5px;
-            height: 100px;
-            background: linear-gradient(45deg, rgb(54, 4, 154), #07620a);
-            margin: 10px;
-            animation: wave 1s linear infinite;
-            border-radius: 20px;
-            }
-            .wave:nth-child(2) {
-            animation-delay: 0.1s;
-            }
-            .wave:nth-child(3) {
-            animation-delay: 0.2s;
-            }
-            .wave:nth-child(4) {
-            animation-delay: 0.3s;
-            }
-            .wave:nth-child(5) {
-            animation-delay: 0.4s;
-            }
-            .wave:nth-child(6) {
-            animation-delay: 0.5s;
-            }
-            .wave:nth-child(7) {
-            animation-delay: 0.6s;
-            }
-            .wave:nth-child(8) {
-            animation-delay: 0.7s;
-            }
-            .wave:nth-child(9) {
-            animation-delay: 0.8s;
-            }
-            .wave:nth-child(10) {
-            animation-delay: 0.9s;
-            }
-
-            @keyframes wave {
-            0% {
-                transform: scale(0);
-            }
-            50% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(0);
-            }
-            }
-    </style>
 </head>
 <body>
     <div class="main">
         <h1>~Gemini-Pro Model~</h1>
         <label for="Prompt">Text Generative LLM Model</label>
-        <input type="text" name="Prompt" id="ip" placeholder="Enter your Prompt">
+        <input type="text" name="Prompt" id="ip" placeholder="     Enter your Prompt">
         <button id="btn" >Submit</button>
         <div id="progressBar" style="display: none;">
             <div class="center">
