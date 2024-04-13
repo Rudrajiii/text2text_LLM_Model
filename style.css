@@ -4,10 +4,6 @@
     box-sizing: border-box;
     color: #d3d4d677;
 }
-@font-face {
-    font-family: hello;
-    src: url('./CavasNeraFree.ttf');
-}
 html,body{
     width: 100vw;
     min-height: 100vh;
@@ -28,14 +24,14 @@ html,body{
     gap: 2vh;
 }
 h1{
-  font-family: "hello", serif;
+  font-family: "Holtwood One SC", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
   /* white-space: nowrap; */
 }
 label{
-    font-family: "hello", serif;
+    font-family: "Holtwood One SC", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
@@ -52,13 +48,14 @@ label{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 #btn{
-    padding: 1.1rem 2rem;
-    border-radius: 2rem;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 1.5rem;
     border: none;
     background: #fff;
     color: #1e1e1e;
-    font-size: 1.1rem;
-    font-family: "hello", serif;
+    font-size: 1rem;
+    font-family: "Holtwood One SC", serif;
     font-weight: 400;
     font-style: normal;
     cursor: pointer;
@@ -104,12 +101,13 @@ label{
         font-size: 1rem;
     }
     #btn{
-        padding: 1rem 1rem;
+        padding: .7rem;
         font-size: 1rem;
     }
     h1{
         width: 70%;
         white-space: nowrap;
+        margin-right: 5rem;
         font-size: 2rem;
     }
     label{
@@ -128,7 +126,7 @@ label{
         padding: .5rem;
     }
     #btn{
-        padding: .7rem .7rem;
+        padding: .7rem;
     }
     #outPut{
         width: 370px;
@@ -137,7 +135,7 @@ label{
     h1{
         width: 70%;
         white-space: nowrap;
-        margin-right: 1.5rem;
+        margin-right: 4.5rem;
         font-size: 1.5rem;
     }
     label{
