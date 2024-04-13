@@ -1,7 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "YOUR_API_KEY";
-// const key = Buffer.from(process.env.PRIVATE_KEY , 'base64').toString('ascii');
+const API_KEY = "AIzaSyDb3vYFYQIz0CSJug8VFPdWRJ5X4GS0BfY";
 const genAI = new GoogleGenerativeAI(API_KEY);
 const input = document.getElementById("ip");
 const btn = document.getElementById("btn");
